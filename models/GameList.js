@@ -1,5 +1,8 @@
 const Filehelper = require('../helpers/FileHelper')
+const ParseHelper = require('../helpers/ParserHelper')
 const Game = require('./Game');
+const ParserHelper = require('../helpers/ParserHelper');
+
 class GameList{
 
     constructor(){
@@ -7,26 +10,27 @@ class GameList{
         this._gameList = {}
         var gameCount = 1;
         linhas.forEach(linha => {
-
             const gameId = 'game_'+gameCount;
 
-            if(/InitGame/i.test(linha)) {
+            ParserHelper.newGame(linha, ()=>{
                 this._gameList[gameId] = new Game();
-            }
+                return;
+            })
 
-            if(/ClientUserinfoChanged/.test(linha)){
-                const match = linha.match(/n\\([^\\]*)\\t/)[1];
+            ParseHelper.newPlayer(linha,match =>{
                 this._gameList[gameId].addPlayer(match);
-            }
+                return;
+            });
 
-            if(/Kill/.test(linha)){
-                const matches = linha.match(/\d\:\s(.*)\skilled\s(.*)\sby/);
+            ParseHelper.kill(linha, matches => {
                 this._gameList[gameId].updateKills(matches[1],matches[2]);
-            }
+                return;
+            });
 
-            if(/ShutdownGame/i.test(linha)){
+            ParseHelper.endGame(linha, ()=>{
                 gameCount++;
-            }
+                return;
+            })
 
         });
     }
