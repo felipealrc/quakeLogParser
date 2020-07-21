@@ -10,4 +10,4 @@ class FileHelper{
     }
     
 }
-module.exports = new FileHelper
+module.exports = new FileHelper()
