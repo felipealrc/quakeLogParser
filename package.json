@@ -1,0 +1,32 @@
+{
+  "name": "dockerized-node",
+  "version": "1.0.0",
+  "description": "Dockerized environment for node development",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.15.3",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --ignore *.marko.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Felipe Alarcon",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
