@@ -60,7 +60,9 @@ e o output esperado deve ser:
  ```
  Após isso basta executar o comando:
  >docker-compose up
- 
+
+utilize o parametro `-d` para liberar o terminal; 
+
  e o output esperado deve ser:
  ```
 Starting node1 ... done
@@ -88,6 +90,17 @@ e na sequencia:
 >npm start
 
 
+## Executando os testes unitarios
+
+#### Com docker 
+Após subir os containers, execute o comando abaixo:
+>docker exec -it node1 bash
+e você vai cair no terminal dentro da maquina virtual do docker, após isso basta digitar
+>root@1c9f33be0232:/app# npm test
+
+#### Com npm
+Execute o comando:
+>npm test
 
 ## Executando o projeto
 
@@ -138,4 +151,4 @@ game_1: {
 
 ## Sugestão de melhorias
 
-* criar um endpoint para importar novos arquivos de .log
+* criar um endpoint para importar novos arquivos de log
