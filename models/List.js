@@ -7,17 +7,20 @@ const KillByMeans = require('./KillByMeans');
 class List{
 
     constructor(){
-        const _logContent = Filehelper.getGameLog();
+        const logContent = Filehelper.getGameLog();
         
         this._gameList = {};
         this._killsList = {}
-        var gameCount = 1;
+        this._parseContent(logContent);
+        
     }
 
 
-    parseContent(){
-        _logContent.forEach(line => {
+    _parseContent(log){
+        
+        var gameCount = 1;
 
+        log.forEach(line => {
             const gameId = 'game_' + gameCount;
             
 
@@ -44,9 +47,7 @@ class List{
             })
         });
     }
-        
-    
-
+          
    getGameList(){
         return JSON.stringify(this._gameList);
     }
