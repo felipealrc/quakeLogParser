@@ -91,7 +91,7 @@ e na sequencia:
 
 ## Executando o projeto
 
-O Quake Log Parser :godmode: executar na porta 3000 do seu navegador e entrando na url `localhost:3000` você vai encontar os caminhos para os end-points do projeto.
+O Quake Log Parser :godmode: executa na porta 3000 do seu ambiente e entrando na url `localhost:3000` você vai encontar os caminhos para os end-points do projeto.
 
 #### /game/list
 
