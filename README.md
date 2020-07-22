@@ -1,4 +1,4 @@
-# Quake Log Parser
+# Quake Log Parser :rage1: :
 
 ## Instalando o ambiente
 
@@ -60,6 +60,7 @@ e o output esperado deve ser:
  ```
  Após isso basta executar o comando:
  >docker-compose up
+ 
  e o output esperado deve ser:
  ```
 Starting node1 ... done
@@ -77,3 +78,4 @@ node1    | consign v0.1.6 Initialized in /app
 node1    | + ./controllers/games.js
 node1    | servidor na porta 3000
  ```
+##### Utilizando o Node Package Manager 📦
