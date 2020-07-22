@@ -2,13 +2,13 @@
 
 ## Instalando o ambiente
 
-##### Utilizando docker-compose
+##### Utilizando Docker-Compose 🐋
 
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal o comando:
 >docker-compose build
 
-e o output esperado deve ser: 
+e o output esperado deve ser:
 ```
  Building node1
  Step 1/10 : FROM node:latest
@@ -57,4 +57,23 @@ e o output esperado deve ser:
  ---> 33300adcda76
  Successfully built 33300adcda76
  Successfully tagged felipealrc/dockerized-node:latest
+ ```
+ Após isso basta executar o comando:
+ >docker-compose up
+ e o output esperado deve ser:
+ ```
+Starting node1 ... done
+Attaching to node1
+node1    | 
+node1    | > dockerized-node@1.0.0 start /app
+node1    | > nodemon index.js --ignore *.log "nodemon" "index.js"
+node1    | 
+node1    | [nodemon] 2.0.4
+node1    | [nodemon] to restart at any time, enter `rs`
+node1    | [nodemon] watching path(s): *.*
+node1    | [nodemon] watching extensions: js,mjs,json
+node1    | [nodemon] starting `node index.js nodemon index.js`
+node1    | consign v0.1.6 Initialized in /app
+node1    | + ./controllers/games.js
+node1    | servidor na porta 3000
  ```
