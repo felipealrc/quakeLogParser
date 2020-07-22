@@ -82,7 +82,7 @@ node1    | servidor na porta 3000
  ```
 ##### Utilizando o Node Package Manager [![NPM](https://img.shields.io/badge/-NPM-Black?logo=NPM&style=flat-square&link=https://github.com/felipealrc/quakeLogParser#utilizando-o-node-package-manager-)](https://github.com/felipealrc/quakeLogParser#utilizando-o-node-package-manager-)
 
-Também é possivel utilizar o tradicional NPM, basta na pasta executar o código:
+Também é possivel utilizar o tradicional NPM, basta executar o código na pasta onde o `package.json` está:
 >npm install
 
 e na sequencia:
@@ -95,7 +95,8 @@ e na sequencia:
 #### Com docker 
 Após subir os containers, execute o comando abaixo:
 >docker exec -it node1 bash
-e você vai cair no terminal dentro da maquina virtual do docker, após isso basta digitar
+
+e você vai cair no terminal dentro da maquina virtual do docker, após isso digite:
 >root@1c9f33be0232:/app# npm test
 
 #### Com npm
