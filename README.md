@@ -95,7 +95,23 @@ O Quake Log Parser :godmode: executar na porta 3000 do seu navegador e entrando 
 
 #### /game/list
 
-Retorna um json com o resumo de todos os jogos, informando os jogadores que entraram na partida, seus respectivos frags e o total de mortes na partida.
+Retorna um json com o resumo de todos os jogos, informando os jogadores que entraram na partida, seus respectivos frags e o total de mortes na partida. no seguinte contrato:
+
+```
+game_1: {
+    "players":["player_1","player_2",..."player_n"],
+    "kills":{
+        "player_1":0
+        "player_2":0
+        ...
+        "player_n":0
+        },
+    "total_kills":0
+},
+game_2: {},
+...
+game_n: {}
+```
 
 #### /game/list/{$id}
 
@@ -103,8 +119,17 @@ Retorna o resumo de uma partida especifica, informando o id
 
 #### /game/kills
 
-Retorna um resumo da partida agrupado pelo motivo da morte.
-
+Retorna uma lista com o resumo das partidas agrupadas pelo motivo da morte, no seguinte contrato:
+```
+game_1: {
+    kill_by_means:{
+        MEAN_OF_DEATH_1: 0,
+        MEAN_OF_DEATH_2: 0,
+        ...
+        MEAN_OF_DEATH_n: 0
+    }
+}
+```
 
 ## Pontos a melhorar
 
