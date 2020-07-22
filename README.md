@@ -88,4 +88,29 @@ e na sequencia:
 >npm start
 
 
-## Arquitetura:
+
+## Executando o projeto
+
+O Quake Log Parser :godmode: executar na porta 3000 do seu navegador e entrando na url `localhost:3000` você vai encontar os caminhos para os end-points do projeto.
+
+#### /game/list
+
+Retorna um json com o resumo de todos os jogos, informando os jogadores que entraram na partida, seus respectivos frags e o total de mortes na partida.
+
+#### /game/list/{$id}
+
+Retorna o resumo de uma partida especifica, informando o id
+
+#### /game/kills
+
+Retorna um resumo da partida agrupado pelo motivo da morte.
+
+
+## Pontos a melhorar
+
+* refatorar a model `List.js`, buscando uma solução mais elegante e menos complexa para a conversão dos arquivos .log
+
+
+## Sugestão de melhorias
+
+* criar um endpoint para importar novos arquivos de .log
