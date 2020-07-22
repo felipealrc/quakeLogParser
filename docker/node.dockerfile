@@ -17,4 +17,3 @@ RUN npm install \
  && mv /app/node_modules /node_modules
 COPY . .
 EXPOSE 3000
-ENTRYPOINT ["npm", "start"]
