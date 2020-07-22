@@ -1,7 +1,6 @@
-:godmode:
 # Quake Log Parser:
 
-## Instalando o ambiente
+## Instalando o ambiente :godmode:
 
 ##### Utilizando Docker-Compose [![Docker](https://img.shields.io/badge/-Docker-purple?style=flat-square&logo=docker&link=https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)](https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)
 
@@ -87,3 +86,6 @@ Também é possivel utilizar o tradicional NPM, basta na pasta executar o códig
 e na sequencia:
 
 >npm start
+
+
+## Arquitetura:
