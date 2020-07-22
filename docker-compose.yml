@@ -1,25 +1,10 @@
 version: '3'
-services:          
-    ##mysql:
-    #    image: mysql:5.7
-    #    restart: on-failure
-    #    networks: 
-    #        - production-network
-    #    environment:
-    #        MYSQL_ROOT_PASSWORD: 'root'
-    #        MYSQL_DATABASE: 'petshop'
-    #        MYSQL_USER: 'admin'
-    #        MYSQL_PASSWORD: 'admin'
-    #
-    #    ports:
-    #        - "3306:3306"
-    #    volumes:
-    #        - ./database:/var/lib/mysql      
+services:            
     node1:
         build:
             dockerfile: ./docker/node.dockerfile
             context: .
-        command: nodemon index.js
+        command: npm start
         volumes:
             - .:/app
         image: felipealrc/dockerized-node
@@ -28,8 +13,6 @@ services:
             - "3000:3000"
         networks:
             - production-network
-    #    depends_on:
-    #        - "mysql"
 networks: 
     production-network:
         driver: bridge
