@@ -7,6 +7,7 @@
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal o comando:
 >docker-compose build
+
 e o output esperado deve ser: 
 ```
  Building node1
