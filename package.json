@@ -6,14 +6,17 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
-    "express": "^4.15.3"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "1.18.4"
+    "nodemon": "1.18.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js --ignore *.log"
+    "start": "nodemon index.js --ignore *.log",
+    "prestart": ""
   },
   "repository": {
     "type": "git",
