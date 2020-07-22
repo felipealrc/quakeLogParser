@@ -3,7 +3,7 @@
 
 ## Instalando o ambiente
 
-##### Utilizando Docker-Compose [![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker&link=https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)](https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)
+##### Utilizando Docker-Compose [![Docker](https://img.shields.io/badge/-Docker-purple?style=flat-square&logo=docker&link=https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)](https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)
 
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal o comando:
@@ -79,7 +79,7 @@ node1    | consign v0.1.6 Initialized in /app
 node1    | + ./controllers/games.js
 node1    | servidor na porta 3000
  ```
-##### Utilizando o Node Package Manager [![NPM](https://img.shields.io/badge/-NPM-Black?logo=NPM&link=https://github.com/felipealrc/quakeLogParser#utilizando-o-node-package-manager-)](https://github.com/felipealrc/quakeLogParser#utilizando-o-node-package-manager-)
+##### Utilizando o Node Package Manager [![NPM](https://img.shields.io/badge/-NPM-Black?logo=NPM&style=flat-square&link=https://github.com/felipealrc/quakeLogParser#utilizando-o-node-package-manager-)](https://github.com/felipealrc/quakeLogParser#utilizando-o-node-package-manager-)
 
 Também é possivel utilizar o tradicional NPM, basta na pasta executar o código:
 >npm install
