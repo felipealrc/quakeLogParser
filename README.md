@@ -1,8 +1,8 @@
 # Quake Log Parser:
 
-## Instalando o ambiente :godmode:
+## Instalando o ambiente
 
-##### Utilizando Docker-Compose [![Docker](https://img.shields.io/badge/-Docker-purple?style=flat-square&logo=docker&link=https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)](https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)
+##### Utilizando Docker-Compose [![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker&link=https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)](https://github.com/felipealrc/quakeLogParser#utilizando-docker-compose-)
 
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal
 O projeto foi desenvolvido utilizando o docker-compose, para instalar o ambiente basta descompatar o arquivo e já tendo o docker e o docker-compose instalados na sua maquina basta digitar o código no seu terminal o comando:
