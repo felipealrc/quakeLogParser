@@ -1,5 +1,5 @@
 const fs = require('fs');
-const filePath = './files/8c93cae335d81186698865a864d263ad/games.log';
+const filePath = './files/games.log';
 
 class FileHelper{
 
